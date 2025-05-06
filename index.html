@@ -7,10 +7,21 @@
 </head>
 <body>
   <h1>Film Data Explorer (1920–1993)</h1>
-  <div id="line-chart"></div>
-  <div id="bar-chart"></div>
-  <div id="scatter-plot"></div>
-  
+
+  <div id="task-list">
+    <button data-task="line">📈 Average Popularity Over Years</button>
+    <button data-task="bar">📊 Number of Films per Genre</button>
+    <button data-task="scatter">🔵 Length vs Popularity (with Awards)</button>
+  </div>
+
+  <div id="visualizations">
+    <div id="line-chart" class="chart hidden"></div>
+    <div id="bar-chart" class="chart hidden"></div>
+    <div id="scatter-plot" class="chart hidden"></div>
+  </div>
+
+  <div class="tooltip" style="opacity:0;"></div>
+
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="script.js"></script>
 </body>
